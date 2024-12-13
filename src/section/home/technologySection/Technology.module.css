@@ -1,0 +1,224 @@
+.home_technology {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  height: auto;
+  padding: 50px 0px;
+}
+
+.home_technology_heading_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.home_technology_heading_container h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.home_technology_card_container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.home_technology_card_container_one,
+.home_technology_card_container_two,
+.home_technology_card_container_three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 400px;
+  width: 30%;
+  border-radius: 30px;
+  padding: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.home_technology_card_container_one:hover,
+.home_technology_card_container_two:hover,
+.home_technology_card_container_three:hover {
+  transform: translateY(-40px);
+}
+
+.home_technology_card_container_one {
+  background-color: #cde8e5;
+}
+
+.home_technology_card_container_two {
+  background-color: #ffecec;
+}
+
+.home_technology_card_container_three {
+  background-color: #acbcff;
+}
+
+.home_technology_card_container_one h2,
+.home_technology_card_container_two h2,
+.home_technology_card_container_three h2 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.home_technology_card_img_container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.home_technology_card_img_container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+}
+
+.home_technology_card_container_one:hover
+  .home_technology_card_img_container
+  img {
+  transform: scale(1.1);
+}
+
+.home_technology_card_container_two:hover
+  .home_technology_card_img_container
+  img {
+  transform: scale(1.1);
+}
+
+.home_technology_card_container_three:hover
+  .home_technology_card_img_container
+  img {
+  transform: scale(1.1);
+}
+
+.home_technology_card_container_one p,
+.home_technology_card_container_two p,
+.home_technology_card_container_three p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+  .home_technology_card_container_one p,
+  .home_technology_card_container_two p,
+  .home_technology_card_container_three p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 23px;
+  }
+  .home_technology_card_container_one h2,
+  .home_technology_card_container_two h2,
+  .home_technology_card_container_three h2 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home_technology_card_img_container img {
+    display: none;
+  }
+}
+
+@media (max-width: 1130px) {
+  .home_technology_card_container_one,
+  .home_technology_card_container_two,
+  .home_technology_card_container_three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .home_technology_card_container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .home_technology {
+    gap: 50px;
+  }
+  .home_technology_heading_container h2 {
+    font-size: 34px;
+  }
+
+  .home_technology_card_container_one,
+  .home_technology_card_container_two,
+  .home_technology_card_container_three {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    transform: none;
+    transition: none;
+  }
+
+  .home_technology_card_container_one:hover,
+  .home_technology_card_container_two:hover,
+  .home_technology_card_container_three:hover {
+    transform: none;
+  }
+
+  .home_technology_card_container {
+    flex-direction: column;
+  }
+  .home_technology_card_container_one p,
+  .home_technology_card_container_two p,
+  .home_technology_card_container_three p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 650px) {
+  .home_technology_card_container_one,
+  .home_technology_card_container_two,
+  .home_technology_card_container_three {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home_technology {
+    gap: 50px;
+  }
+  .home_technology_heading_container h2 {
+    font-size: 30px;
+  }
+  .home_technology_card_container_one,
+  .home_technology_card_container_two,
+  .home_technology_card_container_three {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    transform: none;
+    transition: none;
+    height: 320px;
+  }
+
+  .home_technology_card_container_one:hover,
+  .home_technology_card_container_two:hover,
+  .home_technology_card_container_three:hover {
+    transform: none;
+  }
+  .home_technology_card_container {
+    flex-direction: column;
+  }
+  .home_technology_card_container_one p,
+  .home_technology_card_container_two p,
+  .home_technology_card_container_three p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,163 @@
+.home_approach_main{
+  animation: gradientAnimation 5s ease infinite;
+  background: linear-gradient(100deg, #35b9df, #a7f9ad);
+  background-size: 200% 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+}
+.home_approach {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home_approach_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  width: 80%;
+  background-color: white;
+  padding: 50px;
+  border-radius: 40px;
+}
+
+.home_approach_container h3 {
+  font-size: 29px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.home_approach_container button {
+  background-color: black;
+  border: none;
+  padding: 10px 35px;
+  font-size: 17px;
+  border-radius: 20px;
+  cursor: pointer;
+  /* transition: background 0.8s ease, color 0.8s ease; */
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.home_approach_container button:hover {
+  background: linear-gradient(#35b9df, #a7f9ad);
+  color: white;
+}
+
+.home_approach_hr_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.home_approach_hr{
+  border: 0.5px solid ;
+  border-color:white;
+  width: 100%;
+}
+
+.home_approach_hr_container p{
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+    .home_approach {
+      height: 100%;
+      padding: 20px;
+    }
+  
+    .home_approach_container {
+      width: 90%;
+      padding: 30px;
+      gap: 30px;
+      border-radius: 20px;
+    }
+  
+    .home_approach_container h3 {
+      font-size: 20px;
+      width: 100%;
+    }
+  
+    .home_approach_container button {
+      font-size: 15px;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .home_approach {
+      height: 100%;
+      padding: 30px;
+    }
+  
+    .home_approach_container {
+      width: 85%;
+      padding: 40px;
+      gap: 40px;
+    }
+  
+    .home_approach_container h3 {
+      font-size: 24px;
+      width: 80%;
+    }
+  
+    .home_approach_container button {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+  }
+  
+
+  @media (min-width: 1025px) {
+    .home_approach_container h3 {
+      font-size: 29px;
+      width: 70%;
+    }
+  
+    .home_approach_container button {
+      font-size: 17px;
+      padding: 10px 35px;
+    }
+  }
+
+
+  .customPhoneInputContainer .country-list {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on iOS */
+  }
+  
+  .iosScrolling {
+    -webkit-overflow-scrolling: touch;
+  }
+  
