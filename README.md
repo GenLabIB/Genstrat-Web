@@ -130,7 +130,7 @@ The easiest way to deploy your Next.js app is through the [Vercel Platform](http
 For more deployment options, see [Next.js Deployment Documentation](https://nextjs.org/docs/deployment).
 
 ---
-## Project link:[Click here]()
+## 🔗 Project Links:[Click here](https://genstrat-web.vercel.app/)
 ## 📜 License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details
